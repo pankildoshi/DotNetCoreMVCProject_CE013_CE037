@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CollegeApp.Models.Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="my-2">
+    <a class="btn text-light" asp-action="Create" style="background-color: #7386D5;">Add Product</a>
+</div>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                @if (item.Quantity <= 0)
+                {
+                    <td class="text-danger">Out of stock</td>
+                }
+                else
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                }              
+                <td>
+                    <a asp-action="Edit" class="btn btn-warning text-light" asp-route-id="@item.Id">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a asp-action="Delete" class="btn btn-danger text-light" asp-route-id="@item.Id">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+ 

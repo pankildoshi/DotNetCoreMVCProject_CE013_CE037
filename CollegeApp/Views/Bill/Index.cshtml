@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CollegeApp.Models.Billlocal>
+
+
+<div class="mt-2 mb-4 flex-column">
+    <p class="m-0">Add an item to the bill.</p>
+    <a class="btn text-light" asp-action="Create" style="background-color: #7386D5;">Add Item</a>
+</div>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Totalprice)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Totalprice)
+                </td>
+                <td>
+                    <a asp-action="Delete" class="btn btn-danger text-light" asp-route-name="@item.Name">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="my-4 d-flex flex-column align-items-start">
+    @if (Model.ToList().Count() == 0)
+    {
+        <button class="btn text-light" style="background-color: #7386D5;" disabled>Generate Bill</button>
+        <small class="text-warning">Please, add some items to generate bill.</small>
+    }
+    else
+    {
+        <a asp-action="GenerateBill" class="btn text-light" style="background-color: #7386D5;">Generate Bill</a>
+    }
+</div>
