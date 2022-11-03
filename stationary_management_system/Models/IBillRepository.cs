@@ -1,7 +1,7 @@
-﻿using CollegeApp.Models;
+﻿using stationary_management_system.Models;
 using System.Collections.Generic;
 
-namespace CollegeApp.Models
+namespace stationary_management_system.Models
 {
     public interface IBillRepository
     {

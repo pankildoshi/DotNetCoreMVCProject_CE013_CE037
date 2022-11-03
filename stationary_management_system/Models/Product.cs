@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CollegeApp.Models
+namespace stationary_management_system.Models
 {
     public class Admin
     {

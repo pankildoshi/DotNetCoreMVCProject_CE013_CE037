@@ -1,10 +1,10 @@
-﻿using CollegeApp.Models;
+﻿using stationary_management_system.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace CollegeApp.Models
+namespace stationary_management_system.Models
 {
     public class SQLBilllocalRepository: IBilllocalRepository
     {

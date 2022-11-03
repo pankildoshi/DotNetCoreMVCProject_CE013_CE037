@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CollegeApp.Models;
+using stationary_management_system.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

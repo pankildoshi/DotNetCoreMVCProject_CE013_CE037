@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CollegeApp.Models
+namespace stationary_management_system.Models
 {
     public interface IProductRepository
     {

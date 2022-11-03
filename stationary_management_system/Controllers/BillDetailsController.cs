@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CollegeApp.Models;
+using stationary_management_system.Models;
 using Microsoft.AspNetCore.Authorization;
 
 namespace stationary.Controllers

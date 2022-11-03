@@ -1,8 +1,8 @@
-﻿using CollegeApp.Models;
+﻿using stationary_management_system.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-namespace CollegeApp.Controllers
+namespace stationary_management_system.Controllers
 {
     [Authorize]
     public class BillController : Controller

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stationary", "CollegeApp\stationary.csproj", "{526BC814-949E-45E0-AA0A-6EDCFA32DD99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stationary", "stationary_management_system\stationary.csproj", "{526BC814-949E-45E0-AA0A-6EDCFA32DD99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿using CollegeApp.Models;
+﻿using stationary_management_system.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;

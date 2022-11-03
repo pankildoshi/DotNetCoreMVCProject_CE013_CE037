@@ -1,4 +1,4 @@
-﻿using CollegeApp.Models;
+﻿using stationary_management_system.Models;
 using System.Linq;
 
 namespace stationary.Models
